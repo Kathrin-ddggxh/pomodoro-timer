@@ -9,11 +9,20 @@
     <title>Pomodoro Timer</title>
   </head>
   <body>
-    <div class="timer"></div>
+    <div id="timer">25:00</div>
     <div class="buttons">
-      <button class="work">Work</button>
-      <button class="short">Short break</button>
-      <button class="long">Long break</button>
+      <button class="work" onclick="countdown(24, 59)" accesskey="w">
+        Work
+      </button>
+      <button class="short" onclick="countdown(4, 59)" accesskey="s">
+        Short break
+      </button>
+      <button class="long" onclick="countdown(14, 59)" accesskey="l">
+        Long break
+      </button>
     </div>
+    <button class="pause" onclick="pauseTimer()" accesskey="p">Pause</button>
+
+    <script src="index.js"></script>
   </body>
 </html>
